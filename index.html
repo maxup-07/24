@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VishwaPass</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8f9ff, #e0e0ff);
+}
+h1,h2,h3 { font-family: 'Manrope', sans-serif; }
+
+.screen { display:none; animation:fade 0.3s ease; }
+.active { display:block; }
+
+@keyframes fade {
+  from { opacity:0; transform:translateY(10px);}
+  to { opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="fixed top-0 left-0 right-0 bg-white/60 backdrop-blur-lg p-4 shadow-sm z-50">
+  <div class="flex items-center gap-3 max-w-md mx-auto">
+    <div class="bg-[#4c56af] p-2 rounded-xl">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+        <path d="M2 12h20M12 2a15 15 0 0 1 0 20" stroke="white" stroke-width="2"/>
+      </svg>
+    </div>
+    <h1 class="text-lg font-bold text-[#4c56af]">VishwaPass</h1>
+  </div>
+</div>
+
+<div class="max-w-md mx-auto p-4 pt-20 pb-24">
+
+<!-- HOME -->
+<div id="home" class="screen active">
+
+<!-- HERO -->
+<div class="relative rounded-3xl overflow-hidden mb-6">
+  <img src="https://source.unsplash.com/800x500/?travel,world" referrerpolicy="no-referrer" class="w-full h-48 object-cover">
+  <div class="absolute inset-0 bg-black/40 p-4 flex flex-col justify-end">
+    <h1 class="text-white text-xl font-bold">Where will your journey take you?</h1>
+  </div>
+</div>
+
+<input class="w-full p-3 rounded-xl bg-white/80 backdrop-blur shadow mb-6" placeholder="Search destination..." />
+
+<!-- CATEGORIES -->
+<div class="grid grid-cols-3 gap-3 mb-6">
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow text-center">🎓 Student</div>
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow text-center">🌍 Tourist</div>
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow text-center">💼 Business</div>
+</div>
+
+<h2 class="font-bold mb-3">Popular Destinations</h2>
+
+<!-- DESTINATIONS -->
+<div class="space-y-4">
+
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow">
+    <img src="https://source.unsplash.com/400x200/?london,uk" referrerpolicy="no-referrer" class="rounded-xl mb-2">
+    <b>United Kingdom</b>
+    <p class="text-sm text-gray-600">From ₹10,000 • 15 days</p>
+  </div>
+
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow">
+    <img src="https://source.unsplash.com/400x200/?newyork,usa" referrerpolicy="no-referrer" class="rounded-xl mb-2">
+    <b>United States</b>
+    <p class="text-sm text-gray-600">From ₹12,000 • 20 days</p>
+  </div>
+
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow">
+    <img src="https://source.unsplash.com/400x200/?berlin,germany" referrerpolicy="no-referrer" class="rounded-xl mb-2">
+    <b>Germany</b>
+  </div>
+
+  <div class="bg-white/70 backdrop-blur p-3 rounded-3xl shadow">
+    <img src="https://source.unsplash.com/400x200/?bangkok,thailand" referrerpolicy="no-referrer" class="rounded-xl mb-2">
+    <b>Thailand</b>
+  </div>
+
+</div>
+
+<!-- VAULT CTA -->
+<div class="mt-6 bg-[#4c56af] text-white p-4 rounded-3xl shadow-lg">
+🔐 <b>Secure Vault</b>
+<p class="text-sm opacity-80">Store documents safely & privately</p>
+</div>
+
+</div>
+
+<!-- CHECKLIST -->
+<div id="checklist" class="screen">
+<h1 class="text-xl font-bold mb-4">UK Student Visa (65%)</h1>
+
+<div class="bg-white p-3 rounded-3xl shadow mb-3">Valid Passport ✅</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3 border border-[#9e3f4e]">Bank Statement ⚠ Needs Fix</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">CAS Letter ❌ Missing</div>
+
+<div class="bg-white/70 backdrop-blur p-4 rounded-3xl shadow">
+📢 <b>Visa Expert Tip</b>
+<p class="text-sm text-gray-500">Maintain required balance for 28 days.</p>
+</div>
+</div>
+
+<!-- TRACKING -->
+<div id="tracking" class="screen">
+<h1 class="font-bold mb-4">Tracking ID: VP-9821-FRA</h1>
+
+<div class="bg-white p-3 rounded-3xl shadow mb-3">Documents ✅</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">VFS Appointment ✅</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3 border-l-4 border-[#4c56af]">
+Embassy Submission  
+<p class="text-sm text-[#4c56af]">Passport is being processed</p>
+</div>
+</div>
+
+<!-- VAULT -->
+<div id="vault" class="screen">
+<h1 class="font-bold mb-4">Secure Vault</h1>
+
+<div class="bg-white p-3 rounded-3xl shadow mb-3 border border-[#9e3f4e]">
+⚠ Passport expires in 5 months
+</div>
+
+<div class="bg-white p-3 rounded-3xl shadow mb-3">📄 Passport</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">📄 Aadhar</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">📄 PAN</div>
+</div>
+
+<!-- PROFILE -->
+<div id="profile" class="screen">
+<div class="text-center mb-6">
+<img src="https://source.unsplash.com/100x100/?portrait" referrerpolicy="no-referrer" class="rounded-full mx-auto mb-2">
+<h2 class="font-bold">Vishal</h2>
+<p class="text-sm text-gray-500">user@email.com</p>
+</div>
+
+<div class="bg-white p-3 rounded-3xl shadow mb-3">Security</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">Help</div>
+<div class="bg-white p-3 rounded-3xl shadow mb-3">Terms</div>
+</div>
+
+</div>
+
+<!-- NAV -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg shadow-lg flex justify-around p-3">
+<button onclick="show('home')">🏠</button>
+<button onclick="show('checklist')">📋</button>
+<button onclick="show('tracking')">📍</button>
+<button onclick="show('vault')">🔐</button>
+<button onclick="show('profile')">👤</button>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
